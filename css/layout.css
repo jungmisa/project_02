@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+    background-color: lightgray;
+    margin: auto;
+    text-align: center;
+}
+
+/* 영역:1500px */
+.container{
+    width: 1500px;
+    max-width: 1500px;
+    height: inherit;
+    margin: auto;
+    background-color: white;
+    opacity: .5;
+}
+.titele{height: 120px; background-color: red;}
+.mainbanner{height: 800px; background-color: blue;}
+.map{height:1540px; background-color: yellowgreen;}
+.menu{height: 660px; background-color: rgb(255, 140, 140);}
+.event{height: 400px;background-color: lightskyblue;}
+.onlineshop{height:400px; background-color: grey;}
+.startupguide{height: 400px; background-color:lightslategray;}
+.footer{height:700px; background-color:orange;}
+
+/* 깃테스트중 */
