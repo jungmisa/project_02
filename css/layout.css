@@ -1,3 +1,4 @@
+html{overflow-y: scroll;}
 * {
     margin: 0;
     padding: 0;
@@ -10,22 +11,25 @@
     text-align: center;
 }
 
-/* 영역:1500px */
+/* 영역:1200px */
+
 .container{
-    width: 1500px;
-    max-width: 1500px;
-    height: inherit;
+    width: 100%;
     margin: auto;
     background-color: white;
     opacity: .5;
+    margin-bottom: 10px;
+    padding:20px;
 }
-.titele{height: 120px; background-color: red;}
-.mainbanner{height: 800px; background-color: blue;}
-.map{height:1540px; background-color: yellowgreen;}
-.menu{height: 660px; background-color: rgb(255, 140, 140);}
-.event{height: 400px;background-color: lightskyblue;}
-.onlineshop{height:400px; background-color: grey;}
-.startupguide{height: 400px; background-color:lightslategray;}
-.footer{height:700px; background-color:orange;}
 
-/* 깃테스트중 */
+main{margin: 0 auto;}
+
+
+html,body{height: 100%;}
+.mainbanner{background-color: blue;}
+.menu{background-color: yellowgreen;}
+
+.event{background-color: lightskyblue;}
+.onlineshop{background-color: grey;}
+.startup{background-color:violet;}
+.footer{background-color:orange;}

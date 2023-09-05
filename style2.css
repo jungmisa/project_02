@@ -1,0 +1,108 @@
+html{overflow-y: scroll; font-size: 62.5%;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.df {
+    display: flex;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* wrap */
+.wrap{width: 100%;}
+
+
+.inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    left: 0;
+}
+
+/*=== header==== */
+
+/* nav */
+
+.mainbanner{width: 100%; height: 7.1rem; background-color: #FF592E;}
+
+/* banner */
+
+
+/*==== main==== */
+
+/*=== footer ==*/
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    opacity: .8;
+    height: 90px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    background:rgba(255, 255, 255, .75);
+    transition: all .5s; z-index: 99; padding-bottom:0px;
+    line-height: 50px;
+}
+nav:hover{overflow: visible; height: auto; padding-bottom:50px;}
+
+/* w100 위치를 처음부터 고정시켜줄것 */
+nav:before {
+    content: '';
+    width: 100%;
+    /* 투뎁스 배경 상단위치 */
+    top: 20px;
+    position: absolute;
+    transition: all 0.5s;
+    height: 0;
+    z-index: 11;
+    left: 0;
+    text-align: center;
+}
+
+nav>.gnb li.logo a {
+    background: url(./img/dalkomm.svg) no-repeat center center/15rem;
+    margin-top: 3rem;
+}
+
+.gnb li a span {
+    color: #FFFFFF;
+    background-color: #FF592E;
+    border-radius: 15px;
+    padding: 8px 10px;
+}
+
+
+/* ul class=sub */
+
+.gnb{display: flex; position: relative;}
+.gnb a{display: block; color: black; padding: 16px;}
+.gnb>li>a{color: rgb(150, 150, 150);}
+.gnb li{width: 25%; text-align: center;}
+.sub li{width: 100%; text-align: center;}
+
+/* nav의 높이만큼 메인을 내려줘야함 */
+main{top: 50px; position: relative;}

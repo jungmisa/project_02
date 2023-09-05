@@ -5,54 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrap">
         <header>
-            <!-- 헤더영역1 -->
-            <div class="titele">
-                <div class="container">
-                </div>
-            </div>
-            <!-- 헤더영역2 -->
-            <div class="mainbanner">
-                <div class="container">
-                </div>
-            </div>
-            <!-- 헤더영역3 -->
-            <div class="map">
-                <div class="container">
-                </div>
-            </div>
+            <nav>
+                <ul class="gnb inner">
+                    <li class="logo"><a href="#" class="logo">
+                        </a>
+                    </li>
+                    <li class="depth1"><a href="#">Dal.komm</a>
+                        <ul class="sub">
+                            <li><a href="#">브랜드 이야기</a></li>
+                            <li><a href="#">App 소개</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#">메뉴</a>
+                        <ul class="sub">
+                            <li><a href="#">메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#">매장</a>
+                        <ul class="sub">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">글로벌 달콤</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#">새로운 소식</a>
+                        <ul class="sub">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">달콤스토리</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#">창업안내</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹점개설안내</a></li>
+                            <li><a href="#">창업 상담 신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>SHOP</span></a>
+                        <ul class="sub">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <!-- depth1 -->
+                </ul>
+            </nav>
         </header>
+        <!-- 헤더 영역 -->
+
+        <!-- 메인 영역 -->
         <main>
-            <!-- 메뉴영역1 -->
+            <div class="banner">
+                <div class="inner">
+                    <div class="main_banner">
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="inner">
+                    <div class="searchpot">
+                    </div>
+                </div>
+            </div>
             <div class="menu">
-                <div class="container">
-                </div>
+                <div class="round"></div>
             </div>
-            <!-- 메뉴영역2 -->
-            <div class="event">
-                <div class="container">
-                </div>
-            </div>
-            <!-- 메뉴영역3 -->
             <div class="onlineshop">
-                <div class="container">
+                <div class="coffee"></div>
+            </div>
+            <div class="event">
+                <div class="inner">
                 </div>
             </div>
-            <!-- 메뉴영역4 -->
-            <div class="startupguide">
-                <div class="container">
-                </div>
-            </div>
+            <div class="startup"></div>
         </main>
-        <!-- 하단영역 -->
         <footer>
-            <div class="footer">
-                <div class="container"></div>
+            <div class="right">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <strong>고객을 위한 달콤<a href="#forC" class="btn more"><i
+                                        class="ico acc-arr"><span>more</span></i></a></strong>
+                            <ul id="forC">
+                                <li><a href="/customerCS" class="em">문의하기 (Contact Us)</a></li>
+                                <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>파트너를 위한 달콤<a href="#forP" class="btn more"><i
+                                        class="ico acc-arr"><span>more</span></i></a></strong>
+                            <ul id="forP">
+                                <li><a href="/partnerCS">협력업체 문의</a></li>
+                                <li><a href="/franchiseeCS">가맹 문의</a></li>
+                                <li><a href="/marketingCS">제휴·마케팅 문의</a></li>
+                                <li><a href="/@resource/dalkomm_introduce_v1.pdf" target="_blank">브랜드 소개서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>개인정보 보호 및 약관<a href="#forT" class="btn more"><i
+                                        class="ico acc-arr"><span>more</span></i></a></strong>
+                            <ul id="forT">
+                                <li><a href="/privacy">개인정보 처리방침</a></li>
+                                <li><a href="/serviceTerms">서비스 이용약관</a></li>
+                                <li><a href="/locationTerms">위치기반서비스 이용약관</a></li>
+                                <li><a href="/videoTerms">영상정보 처리기기 운영관리 방침</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>

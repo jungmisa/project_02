@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+
+
+body {font-family: 'NanumSquare', sans-serif;font-size: 1.6rem;line-height: 1.75; }
+
+h1,.h1{font-size: 50px; font-weight: 700;}
+h2,.h2{font-size: 50px; font-weight: 400;}
+h3,.h3{font-size: 36px; font-weight: 400;}
+h4,.h4{font-size: 30px; font-weight: 400;}
+/* body text 본문 */
+.bt1,.bt1{font-size: 20px; font-weight: 400;}
+.bt2,.bt2{font-size: 16px; font-weight: 700;}
+.bt3,.bt3{font-size: 14px; font-weight: 400;}
+.caption{font-size:14px; font-weight: 400;}
+.link{font-size: 12px;font-weight: 700;}
+
+
+/* wireframe */
+
+.wrap {
+    width: 100%;
+    background-color: lightgray;
+    margin: auto;
+    text-align: center;
+}
+
+/* 영역:1200px */
+
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    opacity: .5;
+    margin-bottom: 10px;
+    padding:20px;
+}
+
+main{margin: 0 auto;}
+
+
+html,body{height: 100%;}
+.mainbanner{background-color: blue;}
+.menu{background-color: yellowgreen;}
+
+.event{background-color: lightskyblue;}
+.onlineshop{background-color: grey;}
+.startup{background-color:violet;}
+.footer{background-color:orange;}

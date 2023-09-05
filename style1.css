@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.df {
+    display: flex;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    left: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, .75);
+    top: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+}
+
+
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    line-height: 50px;
+}
+
+
+
+/* 패딩줄 때는 작은 요소 위주로 */
+
+
+
+/* w100 위치를 처음부터 고정시켜줄것 */
+nav:before {
+    content: '';
+    width: 100%;
+    /* 투뎁스 배경 상단위치 */
+    top: 80px;
+    position: absolute;
+    transition: all 0.5s;
+    height: 0;
+    z-index: 11;
+    left: 0;
+    text-align: center;
+}
+
+/* ul class=sub */
+
+.gnb {
+    display: flex;
+    position: relative;
+    z-index: 13;
+}
+
+.gnb a {
+    display: block;
+    color: black;
+    padding: 16px;
+}
+
+.gnb>li>a {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+.gnb li a span {
+    color: #FFFFFF;
+    background-color: #FF592E;
+    border-radius: 15px;
+    padding: 8px 10px;
+}
+
+.gnb li {
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+/* .gnb>li>a{width: 200px; height: 90px;} */
+
+
+nav>.gnb li.logo a {
+    display: block;
+    background: url(./img/dalkomm.svg) no-repeat center center;
+    overflow: hidden;
+    font-size: 0px;
+    text-indent: -9999px;
+    margin-left: 20px;
+}
+
+nav .gnb .depth1 li {
+    background-color: yellowgreen;
+    text-align: center;
+}
+nav>.gnb>.depth1>li>a{text-align: left;}
+.sub {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.gnb a {
+    text-align: center;
+}
+
+
+
+.sub li {
+    width: 100%;
+    text-align: center
+}
+
+
+
+.gnb:hover .sub {
+    height: 100%;
+    overflow: visible;
+}
+
+.gnb li a:hover {
+    color: #FF592E;
+}
+
+.gnb li .border {
+    border-radius: 2px;
+}
+
+
+.gnb>li>a {
+    text-align: center;
+    /* 상위 메뉴 중앙 정렬 */
+}
+
+nav:hover:before {
+    height: 180px;
+    background-color: #fff;
+    opacity: .5;
+}
+
+/* nav의 높이만큼 메인을 내려줘야함 */
+main {
+    top: 90px;
+    position: relative;
+}
