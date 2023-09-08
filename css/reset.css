@@ -115,5 +115,10 @@ a:link,
 a:visited {color: #333; }
 img {border: 0;vertical-align: top; }
 
-html {overflow-y: scroll;font-size: 62.5%; }
+html {overflow-y: scroll; font-size: 62.5%; }
+h1,.h1{font-size:3.1rem; font-weight: 700;}
+h2,.h2{font-size:2.5rem;font-weight: 600;}
+h3,.h3{font-size:2rem;font-weight: 500;}
+.caption{font-size:1.3rem; font-weight: 400;}
+.link{font-size: 1.6rem;font-weight: 500;}
 body {font-family: 'NanumSquare', sans-serif;font-size: 1.6rem;line-height: 1.75; }

@@ -1,0 +1,150 @@
+/* 공통클래스 */
+.df {
+	display: flex;
+}
+
+/* inner 클래스는 주어진 코드에서 <div> 요소에 적용된 클래스입니다. 해당 <div> 요소는 width: 100%; 및 max-width: 1400px; 속성을 가지고 있습니다.
+
+이러한 스타일은 <div class="inner">...</div> 요소가 부모 요소의 너비를 100%로 채우되, 최대 너비가 1400px로 제한되도록 지정합니다.
+
+/* menu */
+.menu .new_items {
+	height: 50vw;
+	/* 590px */
+	background: url(./img/bg_news-item.png) -2vw -2vw no-repeat;
+}
+
+/* 배경으로 'bg_news-item.png' 이미지를 사용하고, 이 이미지를 화면 너비에 대해 2%만큼 왼쪽과 위로 오프셋하며,: 무슨 소리...?  */
+
+/* 50vw:브라우저 창 너비의 50%  */
+
+
+
+/* 텍스트 감싸는 상자/글씨 세로 정렬 */
+.menu .new_items ul.title_wrap {
+	width: 40vw;
+	padding-top: 6.25vw;
+	padding-left: 4vw;
+}
+
+.menu .new_items li {
+	color: #ff592e;
+	width: 50%;
+	line-height: 1.5vw;
+	padding: 2rem;
+}
+
+
+
+/* ul li는 하위에 중첩된 리스트가 있어 계층구조의 복합성을 표현함.
+그래서 정보의 깊이가 더 깊어짐 */
+/* display: flex;를 <span>에 적용하면 해당 요소를 Flex 컨테이너로
+만들어 그 안의 직접적인 자식 요소들을 Flex 아이템으로 만듭니다.
+이렇게 하면 Flexbox 모델에 따라 자식 요소들을 좀 더 유연하게
+배치하고 정렬할 수 있습니다. 예를 들어, 아이템 간 간격을
+일정하게 하거나, 아이템들을 수직 중앙 정렬하는 것 등이 가능해집니다. */
+
+.new_items_text {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 80%;
+}
+
+.new_items_text span:nth-child(1) {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.new_items_text span:nth-child(2) {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.new_items_text span:nth-child(3) {
+	color: black;
+	font-weight: bold;
+	font-size: 60%;
+	line-height: 1vw;
+}
+
+/* //menu:음료 구간 */
+
+/* 온라인 샵 */
+.onlineshop {
+	height: 40vw;
+	background: url(./img/bg_signature-item.png) 45vw 2vw no-repeat;
+}
+
+.onlineshop .coffee ul.coffee_wrap {
+	/* background-color: lightgrey; */
+	width: 40vw;
+	padding: 4rem;
+}
+
+.onlineshop .coffee li {
+	padding-bottom: 2rem;
+	width: 50%;
+	line-height: 3vw;
+}
+
+.coffee .coffee_wrap li:nth-child(1) {
+	color: #ff592e;
+}
+
+.coffee .coffee_wrap li:nth-child(2) {
+	font-size: 100%;
+}
+
+.coffee .coffee_wrap li:nth-child(3) {
+	font-size: 80%;
+	line-height: 2vw;
+}
+
+/* //온라인샵 */
+
+/* 이벤트 공지 */
+.event {
+	height: 40vw;
+	padding: 4vw;
+}
+
+.event .event_box img{
+	width: 100%;
+}
+
+
+.event_box li:last-child img {
+	margin-right: 0;
+}
+.event .event_box .box1 {
+	width: 50%;
+	padding: 2rem;
+	margin-right: 2rem;
+	margin-left: 1.4rem;
+	border: 1.5px solid #ff592e;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+.event .event_box .box2 {
+	width: 50%;
+	padding: 2rem;
+	margin-right: 2rem;
+	margin-left: 1.4rem;
+	border: 1.5px solid #ff592e;
+	text-align: left;
+	font-weight: bold;
+}
+
+.event .event_box .box3 {
+	width: 50%;
+	padding: 2rem;
+	margin-right: 2rem;
+	margin-left: 1.4rem;
+	border: 1.5px solid #ff592e;
+	text-align: left;
+	font-weight: bold;
+}
