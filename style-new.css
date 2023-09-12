@@ -3,6 +3,7 @@
 	display: flex;
 }
 
+
 /* inner 클래스는 주어진 코드에서 <div> 요소에 적용된 클래스입니다. 해당 <div> 요소는 width: 100%; 및 max-width: 1400px; 속성을 가지고 있습니다.
 
 이러한 스타일은 <div class="inner">...</div> 요소가 부모 요소의 너비를 100%로 채우되, 최대 너비가 1400px로 제한되도록 지정합니다.
@@ -106,11 +107,17 @@
 
 /* 이벤트 공지 */
 .event {
-	height: 40vw;
+	height: 30vw;
 	padding: 4vw;
 }
 
-.event .event_box img{
+.event .event_box h1 {
+	color: #ff592e;
+	text-align: center;
+	font-weight: bold;
+}
+
+.event .event_box img {
 	width: 100%;
 }
 
@@ -118,6 +125,7 @@
 .event_box li:last-child img {
 	margin-right: 0;
 }
+
 .event .event_box .box1 {
 	width: 50%;
 	padding: 2rem;
@@ -147,4 +155,109 @@
 	border: 1.5px solid #ff592e;
 	text-align: left;
 	font-weight: bold;
+}
+
+.notice_tag1 {
+	color: #ff592e;
+	font-size: 100%;
+}
+
+.notice_tag2 {
+	color: #ff592e;
+}
+
+/* //이벤트 공지 */
+
+
+
+/* 가맹점 개설 */
+.startup {
+	height: 30vw;
+	padding: 4rem;
+	background: url(./img/bg_supporter.jpg) no-repeat;
+}
+
+.startup .startup_text1 {
+	color: #ff592e;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+.startup .startup_text2 {
+	width: 50%;
+	font-size: 120%;
+	margin-top: 2rem;
+}
+
+.startup .startup_button {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 120%;
+	padding: 1.5rem 2.5rem;
+	margin-top: 3rem;
+	color: #282828;
+	border: solid 1px #282828;
+}
+
+/* // 가맹점 개설 */
+
+.search {
+	width: 100%;
+	height: 20vw;
+}
+
+.search .inner {
+	justify-content: space-between;
+}
+
+.search_box1,
+.search_box2 {
+	flex: 4;
+}
+
+.left.img {
+	width: 100%;
+	height: 20vw;
+	background: url(./img/bg_smartphone.png) no-repeat;
+}
+
+.right.img {
+	padding: 2rem;
+	width: 100%;
+	height: 20vw;
+	background-color: #ff592e;
+	background: url(./img/search_img.png) no-repeat;
+}
+
+/* footer 영역  */
+.footer {
+	width: 100%;
+	height: 20vw;
+	padding: 4rem;
+	background-color: #fff(146, 146, 255);
+}
+
+.footer .footer_info {
+	width: 100%;
+}
+
+.footer .footer_info img {
+	width: 20%;
+	margin-right: 20%;
+}
+
+.footer .inner .footer_info {
+	display: flex;
+}
+
+.footer .inner .footer_info ul {
+	display: flex;
+	color: #282828;
+	flex-direction: column;
+	margin-top: 2rem;
+	margin-right: 6rem;
+}
+
+.footer .inner .footer_info ul li strong {
+	display: block;
 }
