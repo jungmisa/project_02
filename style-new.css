@@ -3,6 +3,26 @@
 	display: flex;
 }
 
+header .popup .textbox{
+	position: absolute;
+	right: 5rem;
+	top: 4rem;
+}
+
+header .popup{
+	position: fixed;
+	z-index: 9999;
+	width: 40rem;
+	height: 20rem;
+	background: #ccc;
+	top: 10%;
+	left: 40%;
+}
+
+header .popup .h3{
+	color: #282828;
+	text-align: center;
+}
 
 /* inner 클래스는 주어진 코드에서 <div> 요소에 적용된 클래스입니다. 해당 <div> 요소는 width: 100%; 및 max-width: 1400px; 속성을 가지고 있습니다.
 
