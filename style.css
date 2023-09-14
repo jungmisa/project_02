@@ -1,112 +1,45 @@
-.wrap {
-	width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.df {
+    display: flex;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+ul {
+    list-style: none;
 }
 
 .inner {
-	width: 100%;
-	max-width: 140rem;
-	margin: auto;
-	left: 0;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    left: 0;
 }
 
-header {
-	width: 100%;
-	position: absolute;
-}
-
-main {
-}
-
-footer {
-	width: 100%;
-	background-color: #fff;
-}
-
-/* 반응형은 rem으로 잡을 것 */
-
-/* 메인 영역 */
+/* nav */
 nav {
-	position: absolute;
-	z-index: 2;
-	height: 12rem;
-	background-color: #fff;
-	left: 0;
-	right: 0;
+    opacity: .8;
+    height: 4vw;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    transition: all .5s; z-index: 99; padding-bottom:0px;
 }
+nav:hover{overflow: visible; height: auto; padding-bottom:50px;}
 
-nav > .inner {
-	display: flex;
-}
-
-.gnb {
-	width: 100%;
-	height: 12rem;
-	background-color: #FFF(255, 255, 255);
-}
-
-.logo {
-	width: 120px;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	position: fixed;
-	line-height: 50px;
-}
-
-/* 패딩줄 때는 작은 요소 위주로 */
-
-/* w100 위치를 처음부터 고정시켜줄것 */
-nav:before {
-	content: '';
-	width: 100%;
-	/* 투뎁스 배경 상단위치 */
-	top: 80px;
-	position: absolute;
-	transition: all 0.5s;
-	height: 0;
-	z-index: 11;
-	left: 0;
-	text-align: center;
-}
-
-/* ul class=sub */
-
-.gnb {
-	display: flex;
-	position: relative;
-	z-index: 13;
-}
-
-.gnb a {
-	display: block;
-	color: black;
-	padding: 16px;
-}
-
-.gnb > li > a {
-	color: #1c1c1c;
-	text-decoration: none;
-}
-
-.gnb li a span {
-	color: #ffffff;
-	background-color: #ff592e;
-	border-radius: 15px;
-	padding: 8px 10px;
-}
-
-.gnb li {
-	width: 25%;
-	text-align: center;
-	position: relative;
-}
-
-/* .gnb>li>a{width: 200px; height: 90px;} */
-
+/* 로고 넣음 */
 nav > .gnb li.logo a {
 	display: block;
 	background: url(./img/dalkomm.svg) no-repeat center center;
@@ -117,53 +50,27 @@ nav > .gnb li.logo a {
 	padding: 4rem;
 }
 
-/* nav .gnb .depth1 li {
-	background-color: #fff;
-	text-align: center;
-} */
 
-nav > .gnb > .depth1 > li > a {
-	text-align: left;
-}
+/* ul class=sub */
 
-.sub {
-	position: absolute;
-	height: 0;
-	overflow: hidden;
-	z-index: 99;
-}
+.gnb{display: flex; position: relative;}
+.gnb a{display: block; color: #222; padding: 2rem; font-weight: bold;}
+.gnb>li>a{color: #222; font-weight: bold;}
+.gnb li{width: 25%; text-align: center;}
+.sub li{width: 100%; text-align: center;}
 
-.gnb a {
-	text-align: center;
-}
+/* nav의 높이만큼 메인을 내려줘야함 */
+main{top: 5vw; position: relative;}
 
-.sub li {
-	width: 100%;
-	text-align: center;
-}
-
-.gnb:hover .sub {
-	height: 100%;
-	overflow: visible;
+.gnb li a span {
+	color: #ffffff;
+	background-color: #ff592e;
+	border-radius: 15px;
+	padding: 8px 10px;
 }
 
 .gnb li a:hover {
 	color: #ff592e;
-}
-
-.gnb li .border {
-	border-radius: 2px;
-}
-
-.gnb > li > a {
-	text-align: center;
-	/* 상위 메뉴 중앙 정렬 */
-}
-
-nav:hover:before {
-	height: 180px;
-	background-color: #fff;
-	opacity: 0.5;
 }
 
 /* 메인배너 */
@@ -177,14 +84,7 @@ nav:hover:before {
 	background-repeat: no-repeat;
 }
 
-.searchpot {
-	background-image: url('./img/search_img.png');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 60rem;
-	position: absolute;
-}
+
 
 footer {
 	color: #fff;

@@ -3,29 +3,56 @@
 	display: flex;
 }
 
-
-header .popup{
-	position: fixed;
-	z-index: 9999;
-	width: 40rem;
-	height: 20rem;
-	background: #cccccc;
-	top: 10%;
-	left: 40%;
+/* 팝업 */
+.popup {
+	display: block;
+    position: fixed;
+    z-index: 999;
+    width: 50rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, .8);
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 5px var(--text1);
 }
 
-header .popup .textbox{
-	position: absolute;
-	right: 8rem;
-	top: 4rem;
-}
-header .popup .h3{
-	color: #282828;
-	text-align: center;
-	padding-left: 6rem;
-	padding-bottom: -2rem;
+.popup .textbox {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 1.75;
 }
 
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.popup .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.popup a {
+    display: block;
+}
+
+a:link, a:visited {
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover{text-decoration: underline;}
 /* inner 클래스는 주어진 코드에서 <div> 요소에 적용된 클래스입니다. 해당 <div> 요소는 width: 100%; 및 max-width: 1400px; 속성을 가지고 있습니다.
 
 이러한 스타일은 <div class="inner">...</div> 요소가 부모 요소의 너비를 100%로 채우되, 최대 너비가 1400px로 제한되도록 지정합니다.
@@ -96,7 +123,7 @@ header .popup .h3{
 
 /* 온라인 샵 */
 .onlineshop {
-	height: 40vw;
+	height: 45vw;
 	background: url(./img/bg_signature-item.png) 45vw 2vw no-repeat;
 }
 
@@ -129,7 +156,7 @@ header .popup .h3{
 
 /* 이벤트 공지 */
 .event {
-	height: 30vw;
+	height: 40vw;
 	padding: 4vw;
 }
 
@@ -225,38 +252,119 @@ header .popup .h3{
 
 .search {
 	width: 100%;
-	height: 20vw;
+	height: 30vw;
+	background: #f43b00;
+	display: flex;
 }
 
-.search .inner {
-	justify-content: space-between;
+.search_background_left {
+	display: flex;
+	width: 50%;
+	background-color: #f0eae8;
 }
 
-.search_box1,
-.search_box2 {
-	flex: 4;
-}
-
-.left.img {
-	padding: 2rem;
+.left_bg {
+	display: flex;
 	width: 100%;
-	height: 20vw;
-	background: url(./img/bg_smartphone.png) no-repeat;
+	height: 30vw;
+	background: url(./img/bg_smartphone.png) 20vw 5vw no-repeat;
 }
 
-.right.img {
-	padding: 2rem;
-	width: 100%;
-	height: 20vw;
-	background-color: #ff592e;
-	background: url(./img/search_img.png) no-repeat;
+.left_bg .mobile_text_left {
+	margin-top: 20%;
+	margin-left: 10%;
+	color: #ff592e;
+	font-size: 4rem;
+	font-weight: bold;
 }
+
+.left_bg .mobile_text_left .mobile_message{
+	width: 65%;
+	color: #ff592e;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.search_background_right {
+	display: flex;
+	width: 50%;
+	background-color: #f43b00;
+}
+
+.right_bg {
+	display: flex;
+	width: 100%;
+	height: 30vw;
+	background: url(./img/bg_finder.png) 31vw 5vw no-repeat;
+}
+
+.mobile_item_right {
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+/* 서치창 */
+
+.search_finder-input {
+	height: 3.2vw;
+	width: 10.5vw;
+	padding: 1vw 0.5vw;
+	font-weight: bold;
+	font-size: 1.2vw;
+	color: #f43b00;
+	background-color: #fbf4e4;
+	vertical-align: top;
+	outline: none;
+	border: 0;
+	vertical-align: top;
+}
+
+.search_finder-submit {
+	width: 3vw;
+	height: 3vw;
+	margin-bottom: 40rem;
+	background-color: #fbf4e4;
+}
+
+.mobile_item_right{color:#fbf4e4}
+.mobile_item_right .map_title {
+	font-size: 8rem;
+	font-weight: bold;
+	color: #fff;
+}
+.map_message{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+button {
+	border: 0 none;
+	font-family: inherit;
+}
+
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+.search_finder-submit img {
+	width: 1.5vw;
+	height: 1.5vw;
+	margin-top: 0.8vw;
+}
+
+.search_finder-submit:hover {
+	cursor: pointer;
+}
+
+
+
 
 /* footer 영역  */
 .footer {
 	width: 100%;
-	height: 20vw;
-	padding: 4rem;
+	height: 30vw;
+	padding: 10rem;
 	background-color: #fff(146, 146, 255);
 }
 
