@@ -1,43 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .df {
-    display: flex;
+	display: flex;
 }
 
 .dn {
-    display: none;
+	display: none;
 }
 
 .db {
-    display: block;
+	display: block;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 .inner {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    left: 0;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
 }
 
 /* nav */
 nav {
-    opacity: .8;
-    height: 4vw;
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    background: #fff;
-    transition: all .5s; z-index: 99; padding-bottom:0px;
+	opacity: 0.8;
+    height:5vw;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	background: #ffffffc0;
+	transition: all 0.5s;
+	z-index: 99;
+	padding-bottom: 0px;
 }
-nav:hover{overflow: visible; height: auto; padding-bottom:50px;}
+nav:hover {
+	overflow: visible;
+	height: 16vw;
+	padding-bottom: 50px;
+}
 
 /* 로고 넣음 */
 nav > .gnb li.logo a {
@@ -50,17 +55,44 @@ nav > .gnb li.logo a {
 	padding: 4rem;
 }
 
-
 /* ul class=sub */
 
-.gnb{display: flex; position: relative;}
-.gnb a{display: block; color: #222; padding: 2rem; font-weight: bold;}
-.gnb>li>a{color: #222; font-weight: bold;}
-.gnb li{width: 25%; text-align: center;}
-.sub li{width: 100%; text-align: center;}
+.gnb {
+	display: flex;
+	position: relative;
+	height: 100%;
+}
+.gnb li{
+    height:5vw;
+    line-height: 5vw;
+}
+.gnb a {
+	display: block;
+	color: #222;
+	font-weight: bold;
+}
+.gnb > li > a {
+	color: #222;
+	font-weight: bold;
+}
+.gnb li {
+	width: 25%;
+	text-align: center;
+}
+.sub{
+    padding:2rem;
+}
+.sub li {
+	width: 100%;
+	text-align: leftC;
+    height: 5rem;
+    line-height: 5rem;
+}
 
 /* nav의 높이만큼 메인을 내려줘야함 */
-main{top: 5vw; position: relative;}
+main {
+	position: relative;
+}
 
 .gnb li a span {
 	color: #ffffff;
@@ -72,19 +104,6 @@ main{top: 5vw; position: relative;}
 .gnb li a:hover {
 	color: #ff592e;
 }
-
-/* 메인배너 */
-
-.main_banner {
-	width: 100%;
-	height: 100vh;
-	background-image: url(./img/img_donut_bg1.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-
 
 footer {
 	color: #fff;

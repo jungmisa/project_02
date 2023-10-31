@@ -6,116 +6,132 @@
 /* 팝업 */
 .popup {
 	display: block;
-    position: fixed;
-    z-index: 999;
-    width: 50rem;
-    height: 20rem;
-    background: rgba(255, 255, 255, .8);
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    border-radius: 10px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 5px var(--text1);
+	position: fixed;
+	z-index: 999;
+	width: 50rem;
+	height: 20rem;
+	background: rgba(255, 255, 255, 0.8);
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
+	box-shadow: 0px 0px 5px var(--text1);
 }
 
 .popup .textbox {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    line-height: 1.75;
-}
-
-img {
-    border: 0;
-    vertical-align: top;
+	width: 100%;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	line-height: 1.75;
 }
 
 .popup .close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
 }
 
 .popup a {
-    display: block;
+	display: block;
 }
 
-a:link, a:visited {
-    color: #333;
-}
-a {
-    text-decoration: none;
-}
+/* main */
 
-a:hover{text-decoration: underline;}
-/* inner 클래스는 주어진 코드에서 <div> 요소에 적용된 클래스입니다. 해당 <div> 요소는 width: 100%; 및 max-width: 1400px; 속성을 가지고 있습니다.
-
-이러한 스타일은 <div class="inner">...</div> 요소가 부모 요소의 너비를 100%로 채우되, 최대 너비가 1400px로 제한되도록 지정합니다.
+/* 메인배너 */
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.main_banner img {
+	width: 100%;
+}
+.bx-controls a {
+	font-size: 2rem;
+	background-color: white;
+}
+.bx-pager {
+	position: absolute;
+	display: flex;
+	gap: 1rem;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
 
 /* menu */
 .menu .new_items {
-	height: 50vw;
-	/* 590px */
+	height: 50vw; /* 590px */
 	background: url(./img/bg_news-item.png) -2vw -2vw no-repeat;
+	background-size: 45vw;
 }
-
-/* 배경으로 'bg_news-item.png' 이미지를 사용하고, 이 이미지를 화면 너비에 대해 2%만큼 왼쪽과 위로 오프셋하며,: 무슨 소리...?  */
-
-/* 50vw:브라우저 창 너비의 50%  */
-
-
 
 /* 텍스트 감싸는 상자/글씨 세로 정렬 */
 .menu .new_items ul.title_wrap {
-	width: 40vw;
+	width: 38vw;
 	padding-top: 6.25vw;
 	padding-left: 4vw;
+	margin-right: 10vw;
 }
-
-.menu .new_items li {
+.menu .new_items ul.title_wrap .h2,
+.onlineshop .h2 {
+	font-size: 2.8vw;
+}
+.menu .new_items ul.title_wrap .h1 {
+	font-size: 3.5vw;
+}
+.menu .new_items ul.title_wrap .caption {
+	font-size: 1.2vw;
+	color: #282828;
+	width: 20vw;
+	margin-bottom: 10vw;
+}
+.menu .new_items ul.title_wrap .more {
+	font-size: 1vw;
+	font-weight: bold;
+	color: #282828;
+}
+.menu .new_items li,
+.onlineshop .title_wrap {
 	color: #ff592e;
-	width: 50%;
-	line-height: 1.5vw;
-	padding: 2rem;
 }
-
-
-
-/* ul li는 하위에 중첩된 리스트가 있어 계층구조의 복합성을 표현함.
-그래서 정보의 깊이가 더 깊어짐 */
-/* display: flex;를 <span>에 적용하면 해당 요소를 Flex 컨테이너로
-만들어 그 안의 직접적인 자식 요소들을 Flex 아이템으로 만듭니다.
-이렇게 하면 Flexbox 모델에 따라 자식 요소들을 좀 더 유연하게
-배치하고 정렬할 수 있습니다. 예를 들어, 아이템 간 간격을
-일정하게 하거나, 아이템들을 수직 중앙 정렬하는 것 등이 가능해집니다. */
 
 .new_items_text {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	width: 80%;
 }
-
+.item_wrap {
+	gap: 3vw;
+}
+.item_wrap li {
+	padding: 10vw 0;
+}
+.item_wrap img {
+	display: block;
+	margin: auto;
+}
+.new_items_text span {
+	letter-spacing: -1px;
+}
 .new_items_text span:nth-child(1) {
-	font-size: 100%;
+	font-size: 1.3vw;
 	font-weight: bold;
 }
-
 .new_items_text span:nth-child(2) {
-	font-size: 80%;
-	font-weight: bold;
+	font-size: 0.8vw;
 }
-
 .new_items_text span:nth-child(3) {
 	color: black;
-	font-weight: bold;
-	font-size: 60%;
+	font-size: 0.8vw;
 	line-height: 1vw;
 }
 
@@ -125,33 +141,38 @@ a:hover{text-decoration: underline;}
 .onlineshop {
 	height: 45vw;
 	background: url(./img/bg_signature-item.png) 45vw 2vw no-repeat;
+	background-size: 55vw;
+	letter-spacing: -1px;
 }
 
-.onlineshop .coffee ul.coffee_wrap {
-	/* background-color: lightgrey; */
-	width: 40vw;
-	padding: 4rem;
+.onlineshop ul.title_wrap {
+	width: 30vw;
+	padding-top: 6.25vw;
+	padding-left: 4vw;
+	margin-right: 10vw;
+	line-height: 2;
 }
 
-.onlineshop .coffee li {
-	padding-bottom: 2rem;
-	width: 50%;
-	line-height: 3vw;
+.onlineshop .h1 {
+	color: black;
+	font-size: 1.3vw;
+	font-weight: bold;
 }
-
-.coffee .coffee_wrap li:nth-child(1) {
-	color: #ff592e;
+.onlineshop .caption {
+	color: black;
+	font-size: 1.3vw;
+	font-weight: lighter;
 }
-
-.coffee .coffee_wrap li:nth-child(2) {
-	font-size: 100%;
+.onlineshop .more {
+	color: ff592e;
+	font-size: 1.3vw;
+	padding: 0.8vw;
+	border: 1px solid;
+	margin: 3vw 0;
+	text-align: center;
+	width: 14vw;
+	font-weight: bold;
 }
-
-.coffee .coffee_wrap li:nth-child(3) {
-	font-size: 80%;
-	line-height: 2vw;
-}
-
 /* //온라인샵 */
 
 /* 이벤트 공지 */
@@ -170,7 +191,6 @@ a:hover{text-decoration: underline;}
 	width: 100%;
 }
 
-
 .event_box li:last-child img {
 	margin-right: 0;
 }
@@ -184,7 +204,6 @@ a:hover{text-decoration: underline;}
 	text-align: left;
 	font-weight: bold;
 }
-
 
 .event .event_box .box2 {
 	width: 50%;
@@ -217,8 +236,6 @@ a:hover{text-decoration: underline;}
 
 /* //이벤트 공지 */
 
-
-
 /* 가맹점 개설 */
 .startup {
 	height: 30vw;
@@ -250,117 +267,22 @@ a:hover{text-decoration: underline;}
 
 /* // 가맹점 개설 */
 
-.search {
-	width: 100%;
+/* search */
+
+.col {
+	flex: 1 1 50%;
 	height: 30vw;
-	background: #f43b00;
-	display: flex;
+}
+.col.left {
+	background: #f0eae8 url(../img/table_order.png) no-repeat left top;
+	background-size: contain;
+}
+.col.right {
+	background: #ff0000 url(../img/search_img.png) no-repeat left top;
+	background-size: contain;
 }
 
-.search_background_left {
-	display: flex;
-	width: 50%;
-	background-color: #f0eae8;
-}
-
-.left_bg {
-	display: flex;
-	width: 100%;
-	height: 30vw;
-	background: url(./img/bg_smartphone.png) 20vw 5vw no-repeat;
-}
-
-.left_bg .mobile_text_left {
-	margin-top: 20%;
-	margin-left: 10%;
-	color: #ff592e;
-	font-size: 4rem;
-	font-weight: bold;
-}
-
-.left_bg .mobile_text_left .mobile_message{
-	width: 65%;
-	color: #ff592e;
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.search_background_right {
-	display: flex;
-	width: 50%;
-	background-color: #f43b00;
-}
-
-.right_bg {
-	display: flex;
-	width: 100%;
-	height: 30vw;
-	background: url(./img/bg_finder.png) 31vw 5vw no-repeat;
-}
-
-.mobile_item_right {
-	margin-top: 10%;
-	margin-left: 10%;
-}
-
-/* 서치창 */
-
-.search_finder-input {
-	height: 3.2vw;
-	width: 10.5vw;
-	padding: 1vw 0.5vw;
-	font-weight: bold;
-	font-size: 1.2vw;
-	color: #f43b00;
-	background-color: #fbf4e4;
-	vertical-align: top;
-	outline: none;
-	border: 0;
-	vertical-align: top;
-}
-
-.search_finder-submit {
-	width: 3vw;
-	height: 3vw;
-	margin-bottom: 40rem;
-	background-color: #fbf4e4;
-}
-
-.mobile_item_right{color:#fbf4e4}
-.mobile_item_right .map_title {
-	font-size: 8rem;
-	font-weight: bold;
-	color: #fff;
-}
-.map_message{
-	font-size: 2rem;
-	margin-bottom: 2rem;
-}
-
-button {
-	border: 0 none;
-	font-family: inherit;
-}
-
-img {
-	overflow-clip-margin: content-box;
-	overflow: clip;
-}
-
-.search_finder-submit img {
-	width: 1.5vw;
-	height: 1.5vw;
-	margin-top: 0.8vw;
-}
-
-.search_finder-submit:hover {
-	cursor: pointer;
-}
-
-
-
-
-/* footer 영역  */
+/* footer 영역 */
 .footer {
 	width: 100%;
 	height: 30vw;
