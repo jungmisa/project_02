@@ -49,13 +49,16 @@
 	height: 100vh;
 	overflow: hidden;
 }
+
 .main_banner img {
 	width: 100%;
 }
+
 .bx-controls a {
 	font-size: 2rem;
 	background-color: white;
 }
+
 .bx-pager {
 	position: absolute;
 	display: flex;
@@ -68,7 +71,8 @@
 
 /* menu */
 .menu .new_items {
-	height: 50vw; /* 590px */
+	height: 50vw;
+	/* 590px */
 	background: url(./img/bg_news-item.png) -2vw -2vw no-repeat;
 	background-size: 45vw;
 }
@@ -80,24 +84,29 @@
 	padding-left: 4vw;
 	margin-right: 10vw;
 }
+
 .menu .new_items ul.title_wrap .h2,
 .onlineshop .h2 {
 	font-size: 2.8vw;
 }
+
 .menu .new_items ul.title_wrap .h1 {
 	font-size: 3.5vw;
 }
+
 .menu .new_items ul.title_wrap .caption {
 	font-size: 1.2vw;
 	color: #282828;
 	width: 20vw;
 	margin-bottom: 10vw;
 }
+
 .menu .new_items ul.title_wrap .more {
 	font-size: 1vw;
 	font-weight: bold;
 	color: #282828;
 }
+
 .menu .new_items li,
 .onlineshop .title_wrap {
 	color: #ff592e;
@@ -109,26 +118,33 @@
 	justify-content: center;
 	text-align: center;
 }
+
 .item_wrap {
 	gap: 3vw;
 }
+
 .item_wrap li {
 	padding: 10vw 0;
 }
+
 .item_wrap img {
 	display: block;
 	margin: auto;
 }
+
 .new_items_text span {
 	letter-spacing: -1px;
 }
+
 .new_items_text span:nth-child(1) {
 	font-size: 1.3vw;
 	font-weight: bold;
 }
+
 .new_items_text span:nth-child(2) {
 	font-size: 0.8vw;
 }
+
 .new_items_text span:nth-child(3) {
 	color: black;
 	font-size: 0.8vw;
@@ -158,11 +174,13 @@
 	font-size: 1.3vw;
 	font-weight: bold;
 }
+
 .onlineshop .caption {
 	color: black;
 	font-size: 1.3vw;
 	font-weight: lighter;
 }
+
 .onlineshop .more {
 	color: ff592e;
 	font-size: 1.3vw;
@@ -173,6 +191,7 @@
 	width: 14vw;
 	font-weight: bold;
 }
+
 /* //온라인샵 */
 
 /* 이벤트 공지 */
@@ -236,6 +255,140 @@
 
 /* //이벤트 공지 */
 
+/* 가맹점 개설 리디자인 */
+
+.startup-re {
+	display: none;
+	height: auto;
+	padding: 4rem;
+	border: 1px solid blue;
+}
+
+.startup-box {
+	position: relative;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.left-banner {
+	position: relative;
+	display: flex;
+	height: 25vw;
+	background: lightgray;
+	border-radius: 25px;
+	align-items: center;
+	border: 1px solid blue;
+	justify-content: space-between;
+}
+
+.left-content {
+	display: flex;
+	flex-direction: column;
+	gap: 58px;
+	border: 1px solid blue;
+	flex: 1;
+}
+
+
+.left-content>.table-text {
+	display: flex;
+	margin-left: 65px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 25px;
+}
+
+
+.view-btn {
+	margin-left: 60px;
+	width: 140px;
+	height: 60px;
+	padding: 15px;
+	border: none;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.mobile {
+	width: 380px;
+	height: 380px;
+	background: url(./img/mobile_device.png) no-repeat;
+	background-size: cover;
+	/* border: 1px solid blue; */
+}
+
+.right-banner {
+	display: flex;
+	background: #FF592E;
+	width: 50%;
+	height: 25vw;
+	justify-content: flex-end;
+	align-items: center;
+	border-radius: 25px;
+	border: 1px solid blue;
+}
+
+.right-content {
+	margin-left: 65px;
+	display: flex;
+	height: 25vh;
+	align-items: center;
+	/* border: 1px solid blue; */
+}
+
+.search-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 68px;
+}
+
+.search-content>.table-text2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.table-text2>p:nth-child(1) {
+	color: #fff;
+	font-family: NanumSquare Neo;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.table-text2>p:nth-child(2) {
+	color: #fff;
+	font-family: NanumSquare Neo;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	/* 160% */
+}
+
+/* 인풋태그 */
+.search-section>input {
+	display: flex;
+	background: lightgray;
+	padding: 15px 15px 13px 13px;
+	justify-content: center;
+	align-items: flex-start;
+	border: none;
+	border-radius: 50px;
+	gap: 106px;
+}
+
+.spot-content {
+	width: 300px;
+	height: 380px;
+	background: url(./img/navi-img.png)no-repeat;
+}
+
 /* 가맹점 개설 */
 .startup {
 	height: 30vw;
@@ -273,12 +426,17 @@
 	flex: 1 1 50%;
 	height: 30vw;
 }
+
 .col.left {
-	background: #f0eae8 url(../img/table_order.png) no-repeat left top;
+	background: lightgray;
+	background: #f0eae8 url(./img/table_order.png) no-repeat left top;
 	background-size: contain;
 }
+
+
 .col.right {
-	background: #ff0000 url(../img/search_img.png) no-repeat left top;
+	background: #FF592E;
+	background: #ff0000 url(./img/search_img.png) no-repeat left top;
 	background-size: contain;
 }
 
