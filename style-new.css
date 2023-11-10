@@ -255,38 +255,39 @@
 
 /* //이벤트 공지 */
 
-/* 가맹점 개설 리디자인 */
+/* 검색창 개설 리디자인 */
 
-.startup-re {
-	display: none;
+.search-re {
+	/* display: none; */
+	margin-top: -6rem;
 	height: auto;
 	padding: 4rem;
-	border: 1px solid blue;
+	margin-bottom: 10rem;
+	/* border: 1px solid blue; */
 }
 
-.startup-box {
+.search-box {
 	position: relative;
 	justify-content: space-between;
-	gap: 40px;
+	gap: 2.8vw;
 }
 
 .left-banner {
-	position: relative;
 	display: flex;
-	height: 25vw;
+	height: 20vw;
 	background: lightgray;
 	border-radius: 25px;
 	align-items: center;
-	border: 1px solid blue;
 	justify-content: space-between;
+	overflow: hidden;
+	/* border: 1px solid blue; */
 }
 
 .left-content {
 	display: flex;
 	flex-direction: column;
-	gap: 58px;
-	border: 1px solid blue;
-	flex: 1;
+	gap: 2.5vw;
+	height: 25vh;
 }
 
 
@@ -296,6 +297,23 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 25px;
+}
+
+.table-text>p:nth-child(1) {
+	color: #ff592e;
+	font-family: NanumSquare Neo;
+	font-size: 45px;
+	font-weight: 800;
+}
+
+.table-text>p:nth-child(2) {
+	color: #FF592E;
+	font-family: NanumSquare Neo;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	/* 160% */
 }
 
 
@@ -311,26 +329,34 @@
 	font-weight: bold;
 }
 
+.view-btn:hover {
+	background-color: #FF592E;
+}
+
 .mobile {
-	width: 380px;
-	height: 380px;
+	width: 22.3vw;
+	height: 42.3vh;
 	background: url(./img/mobile_device.png) no-repeat;
 	background-size: cover;
+	overflow: hidden;
 	/* border: 1px solid blue; */
 }
 
 .right-banner {
 	display: flex;
+	position: relative;
 	background: #FF592E;
 	width: 50%;
-	height: 25vw;
+	height: 20vw;
 	justify-content: flex-end;
 	align-items: center;
 	border-radius: 25px;
-	border: 1px solid blue;
+	overflow: hidden;
+	/* border: 1px solid blue; */
 }
 
 .right-content {
+	position: absolute;
 	margin-left: 65px;
 	display: flex;
 	height: 25vh;
@@ -362,6 +388,7 @@
 }
 
 .table-text2>p:nth-child(2) {
+	width: 75%;
 	color: #fff;
 	font-family: NanumSquare Neo;
 	font-size: 16px;
@@ -384,10 +411,23 @@
 }
 
 .spot-content {
-	width: 300px;
-	height: 380px;
+	width: 16.8vw;
+	height: 50.4vh;
 	background: url(./img/navi-img.png)no-repeat;
 }
+
+.spot-content>img {
+	position: absolute;
+	width: 80px;
+	top: -10%;
+	left: 60%;
+	transition: transform 0.3s ease-in-out;
+}
+
+.spot-content img:hover {
+	transform: scale(1.1);
+}
+
 
 /* 가맹점 개설 */
 .startup {
@@ -421,6 +461,10 @@
 /* // 가맹점 개설 */
 
 /* search */
+
+.search {
+	display: none;
+}
 
 .col {
 	flex: 1 1 50%;
